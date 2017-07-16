@@ -343,8 +343,8 @@ def get_installed_apks():
 # optional, build the c++ binaries and preimport the python for speed
 def manager_prepare():
   # update submodules
-  system("cd %s && git submodule init panda opendbc pyextra" % BASEDIR)
-  system("cd %s && git submodule update panda opendbc pyextra" % BASEDIR)
+  #system("cd %s && git submodule init panda opendbc pyextra" % BASEDIR)
+  #system("cd %s && git submodule update panda opendbc pyextra" % BASEDIR)
 
   # build cereal first
   subprocess.check_call(["make", "-j4"], cwd=os.path.join(BASEDIR, "cereal"))
